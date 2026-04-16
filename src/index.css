@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center */
+        /* Poori screen ki height use karega */
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9; /* Halka sa background color (Optional) */
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Heading aur P ko center mein align karne ke liye */
+  font-family: 'Montserrat', sans-serif;
+
+.section-title {
+  color: #2563eb; /* Professional Blue */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
