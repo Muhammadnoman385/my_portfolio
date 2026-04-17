@@ -81,22 +81,36 @@ function App() {
             </div>
           </section>
         )}
+{currentPage === 'projects' && (
+  <section className="fade-in">
+    <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>My Work</h1>
+    <div className="grid">
+      
+      {/* Project 1 */}
+      <div className="card">
+        <img 
+          src="/images/school-project.jpg" 
+          alt="University Management System (Desktop Application)" 
+          style={{ width: '100%', borderRadius: '8px', marginBottom: '1rem' }} 
+        />
+        <h3>"University Management System (Desktop Application)"</h3>
+        <p style={{maxWidth: '600px',textAlign: 'justify' ,marginTop: '15px'}}>Developed a robust Desktop Application designed to automate university administrative workflows and academic management. The system serves as a centralized hub for handling student data, faculty records, and institutional operations efficiently. Technical Stack: OOP (C#),  SQL Server/, Desktop UI Framework.</p>
+      </div>
 
-        {currentPage === 'projects' && (
-          <section className="fade-in">
-            <h1 style={{textAlign: 'center'}}>My Work</h1>
-            <div className="grid">
-              <div className="card">
-                <h3>School Management</h3>
-                <p>Database normalization ke saath banaya gaya system.</p>
-              </div>
-              <div className="card">
-                <h3>Inventory System</h3>
-                <p>SQL queries aur React interface ka combination.</p>
-              </div>
-            </div>
-          </section>
-        )}
+      {/* Project 2 */}
+      <div className="card">
+        <img 
+          src="/images/inventory-project.jpg" 
+          alt="Inventory System" 
+          style={{ width: '100%', borderRadius: '8px', marginBottom: '1rem' }} 
+        />
+        <h3>Inventory System</h3>
+        <p>SQL queries aur React interface ka combination.</p>
+      </div>
+
+    </div>
+  </section>
+)}
 
         {currentPage === 'contact' && (
           <section className="fade-in">
