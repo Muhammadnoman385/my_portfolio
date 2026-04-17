@@ -100,7 +100,7 @@ function App() {
       </div>
 
       <nav className="navbar">
-        <div className="logo">&lt; M. Noman /&gt;</div>
+        <div className="logo"> My Portfolio</div>
         <button className="menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>☰</button>
         <ul className="nav-links">
           <li onClick={() => handleNavClick('home')} className={currentPage === 'home' ? 'active' : ''}>About</li>
