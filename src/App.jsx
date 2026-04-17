@@ -38,14 +38,47 @@ function App() {
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
       `}</style>
 
-      <nav className="navbar">
-        <div className="logo">MyPortfolio</div>
-        <ul className="nav-links">
-          <li onClick={() => setCurrentPage('home')} className={currentPage === 'home' ? 'active' : ''}>About Me</li>
-          <li onClick={() => setCurrentPage('projects')} className={currentPage === 'projects' ? 'active' : ''}>Projects</li>
-          <li onClick={() => setCurrentPage('contact')} className={currentPage === 'contact' ? 'active' : ''}>Contact Me</li>
-        </ul>
-      </nav>
+     <nav className="navbar">
+  <div className="logo">MyPortfolio</div>
+  <ul className="nav-links">
+    <li 
+      onClick={() => setCurrentPage('home')} 
+      className={currentPage === 'home' ? 'active' : ''}
+    >
+      About Me
+    </li>
+    <li 
+      onClick={() => setCurrentPage('projects')} 
+      className={currentPage === 'projects' ? 'active' : ''}
+    >
+      Projects
+    </li>
+    <li 
+      onClick={() => setCurrentPage('contact')} 
+      className={currentPage === 'contact' ? 'active' : ''}
+    >
+      Contact Me
+    </li>
+    
+    {/* GitHub Link Added Below */}
+    <li>
+      <a 
+        href="https://github.com/Muhammadnoman385" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        style={{ 
+          textDecoration: 'none', 
+          color: 'inherit', 
+          display: 'flex', 
+          alignItems: 'center' 
+        }}
+      >
+        GitHub Profile
+      </a>
+    </li>
+  </ul>
+</nav>
+      
 
       <div className="content-area">
         {currentPage === 'home' && (
