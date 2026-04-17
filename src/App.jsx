@@ -6,18 +6,16 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [scrollWidth, setScrollWidth] = useState(0);
 
-  // Typing Effect Logic - Fixed for Accuracy
+  // Typing Effect Logic
   const [displayText, setDisplayText] = useState('');
   const [index, setIndex] = useState(0);
   const fullText = "MERN & Full Stack Developer";
 
-  // Reset typing when page changes
   useEffect(() => {
     setIndex(0);
     setDisplayText('');
   }, [currentPage]);
 
-  // Precise character-by-character typing
   useEffect(() => {
     if (index < fullText.length) {
       const timeout = setTimeout(() => {
@@ -82,8 +80,8 @@ function App() {
         .skill-badge { background: #f1f5f9; color: #0284c7; padding: 10px; border-radius: 8px; font-weight: 600; border: 1px solid #e2e8f0; transition: 0.3s; }
         .skill-badge:hover { background: #38bdf8; color: white; transform: translateY(-3px); }
 
-        .contact-form { max-width: 500px; width: 100%; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
-        .contact-form input, .contact-form textarea { padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; outline: none; font-family: inherit; }
+        .contact-form { width: 100%; display: flex; flex-direction: column; gap: 15px; }
+        .contact-form input, .contact-form textarea { padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; outline: none; font-family: inherit; width: 100%; box-sizing: border-box; }
         
         .send-btn { background: #0284c7; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; transition: 0.3s; margin-top: 10px; }
         .send-btn:hover { background: #0369a1; transform: translateY(-2px); }
@@ -102,7 +100,7 @@ function App() {
       </div>
 
       <nav className="navbar">
-        <div className="logo">My Portfolio</div>
+        <div className="logo">&lt; M. Noman /&gt;</div>
         <button className="menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>☰</button>
         <ul className="nav-links">
           <li onClick={() => handleNavClick('home')} className={currentPage === 'home' ? 'active' : ''}>About</li>
@@ -173,11 +171,14 @@ function App() {
         {currentPage === 'contact' && (
           <div className="fade-in">
             <h1 style={{textAlign: 'center', marginBottom: '30px'}}>Contact Me</h1>
-            <div className="contact-form">
-              <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="Your Email" />
-              <textarea placeholder="Your Message" rows="5"></textarea>
-              <button className="send-btn">Send Message</button>
+            <div className="card-container" style={{maxWidth: '600px'}}>
+              <div className="contact-form">
+                <h3 style={{marginTop: '0'}}>Get In Touch</h3>
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+                <textarea placeholder="Your Message" rows="5"></textarea>
+                <button className="send-btn" style={{width: '100%'}}>Send Message</button>
+              </div>
             </div>
           </div>
         )}
