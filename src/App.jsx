@@ -41,7 +41,7 @@ function App() {
       <nav className="navbar">
         <div className="logo">MyPortfolio</div>
         <ul className="nav-links">
-          <li onClick={() => setCurrentPage('home')} className={currentPage === 'home' ? 'active' : ''}>About</li>
+          <li onClick={() => setCurrentPage('home')} className={currentPage === 'home' ? 'active' : ''}>About Me</li>
           <li onClick={() => setCurrentPage('projects')} className={currentPage === 'projects' ? 'active' : ''}>Projects</li>
           <li onClick={() => setCurrentPage('contact')} className={currentPage === 'contact' ? 'active' : ''}>Contact Me</li>
         </ul>
