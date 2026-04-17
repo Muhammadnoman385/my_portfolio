@@ -87,15 +87,46 @@ function App() {
     <div className="grid">
       
       {/* Project 1 */}
-      <div className="card">
-        <img 
-          src="/images/school-project.jpg" 
-          alt="University Management System (Desktop Application)" 
-          style={{ width: '100%', borderRadius: '8px', marginBottom: '1rem' }} 
-        />
-        <h3>"University Management System (Desktop Application)"</h3>
-        <p style={{maxWidth: '600px',textAlign: 'justify' ,marginTop: '15px'}}>Developed a robust Desktop Application designed to automate university administrative workflows and academic management. The system serves as a centralized hub for handling student data, faculty records, and institutional operations efficiently. Technical Stack: OOP (C#),  SQL Server/, Desktop UI Framework.</p>
-      </div>
+     <div className="card" style={{ padding: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img 
+    src="/networking.png" 
+    alt="Intercity Banking Network Topology" 
+    style={{ width: '80%', borderRadius: '8px', marginBottom: '1rem' }} 
+  />
+  
+  <h3 style={{ textAlign: 'center' }}>Intercity Banking Network (Simulation)</h3>
+  
+  <p style={{ maxWidth: '600px', textAlign: 'justify', marginTop: '15px', lineHeight: '1.6' }}>
+    This project simulates a secure Intercity Banking Network architecture, connecting 
+    three sub-branches (Hadeed, Malir, and Saddar) to a central main branch. 
+    It leverages <strong>Router-on-a-Stick (Sub-interface Routing)</strong> to manage multiple 
+    vibrant networks per branch, ensuring efficient data flow and logical segmentation 
+    across the banking infrastructure.
+  </p>
+
+  {/* GitHub Link Button */}
+  <a 
+    href="https://github.com/Muhammadnoman385/Intercity-Bank-Networking" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{
+      marginTop: '20px',
+      padding: '10px 20px',
+      backgroundColor: '#24292e', // GitHub Dark Theme Color
+      color: 'white',
+      textDecoration: 'none',
+      borderRadius: '5px',
+      fontWeight: 'bold',
+      fontSize: '0.9rem',
+      display: 'inline-block',
+      transition: 'background-color 0.3s'
+    }}
+    onMouseOver={(e) => e.target.style.backgroundColor = '#444'}
+    onMouseOut={(e) => e.target.style.backgroundColor = '#24292e'}
+  >
+    View Project on GitHub
+  </a>
+</div>
 
       {/* Project 2 */}
       <div className="card">
