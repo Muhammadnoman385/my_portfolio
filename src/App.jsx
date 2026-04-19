@@ -159,7 +159,7 @@ function App() {
                 <a href="https://github.com/Muhammadnoman385/Intercity-Bank-Networking" target="_blank" rel="noopener noreferrer" className="send-btn">View Code</a>
               </div>
               <div className="project-card">
-                <img src="/images/inventory-project.jpg" alt="Inventory System" />
+                <img src="photo.png" alt="Inventory System" />
                 <h3>Automated Certificate Generator</h3>
                 <p>This is a Python-based automation tool that generates professional certificates in bulk using data from a CSV or Worksheet file.
                    Features:
