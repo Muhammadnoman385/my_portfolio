@@ -173,7 +173,7 @@ Libraries: Pandas, Pillow (PIL)
 
 
                 </p>
-                <button className="send-btn">Coming Soon</button>
+              <a href="https://github.com/Muhammadnoman385/python-cert-gen" target="_blank" rel="noopener noreferrer" className="send-btn">View Code</a>
               </div>
             </div>
           </div>
