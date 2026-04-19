@@ -103,7 +103,7 @@ function App() {
         <div className="logo"> My Portfolio</div>
         <button className="menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>☰</button>
         <ul className="nav-links">
-          <li onClick={() => handleNavClick('home')} className={currentPage === 'home' ? 'active' : ''}>About</li>
+          <li onClick={() => handleNavClick('home')} className={currentPage === 'home' ? 'active' : ''}>About Me</li>
           <li onClick={() => handleNavClick('projects')} className={currentPage === 'projects' ? 'active' : ''}>Projects</li>
           <li onClick={() => handleNavClick('contact')} className={currentPage === 'contact' ? 'active' : ''}>Contact</li>
           <li><a href="https://github.com/Muhammadnoman385" target="_blank" rel="noopener noreferrer">GitHub</a></li>
@@ -160,8 +160,19 @@ function App() {
               </div>
               <div className="project-card">
                 <img src="/images/inventory-project.jpg" alt="Inventory System" />
-                <h3>Inventory System</h3>
-                <p>An automated management system built with React and SQL Server for tracking stock and sales.</p>
+                <h3>Automated Certificate Generator</h3>
+                <p>This is a Python-based automation tool that generates professional certificates in bulk using data from a CSV or Worksheet file.
+                   Features:
+Bulk Processing: Generates multiple certificates in seconds.
+Dual-Field Support: Handles both Name and Department fields.
+Custom Positioning: Precise text placement on professional templates.
+Data-Driven: Easily update records via data.csv.
+Language: Python
+Libraries: Pandas, Pillow (PIL)
+
+
+
+                </p>
                 <button className="send-btn">Coming Soon</button>
               </div>
             </div>
