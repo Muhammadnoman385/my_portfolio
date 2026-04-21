@@ -105,7 +105,7 @@ function App() {
         <ul className="nav-links">
           <li onClick={() => handleNavClick('home')} className={currentPage === 'home' ? 'active' : ''}>About Me</li>
           <li onClick={() => handleNavClick('projects')} className={currentPage === 'projects' ? 'active' : ''}>Projects</li>
-          <li onClick={() => handleNavClick('contact')} className={currentPage === 'contact' ? 'active' : ''}>Contact</li>
+
           <li><a href="https://github.com/Muhammadnoman385" target="_blank" rel="noopener noreferrer">GitHub</a></li>
            <li><a href="#" target="_blank" rel="noopener noreferrer">Blogs</a></li>
             <li onClick={() => handleNavClick('contact')} className={currentPage === 'contact' ? 'active' : ''}>Contact</li>
