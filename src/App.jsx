@@ -151,6 +151,11 @@ function App() {
         )}
 
         {currentPage === 'projects' && (
+
+
+
+
+          
           <div className="fade-in">
             <h1 style={{textAlign: 'center', marginBottom: '20px'}}>My Projects</h1>
             <div className="grid">
@@ -159,6 +164,12 @@ function App() {
                 <h3>Intercity Banking Network</h3>
                 <p>A secure banking architecture using Router-on-a-Stick simulation for efficient intercity data routing.</p>
                 <a href="https://github.com/Muhammadnoman385/Intercity-Bank-Networking" target="_blank" rel="noopener noreferrer" className="send-btn">View Code</a>
+              </div>
+              <div className="project-card">
+                <img src="/ACID.png" alt="Banking Network" />
+                <h3>ACID Banking System </h3>
+                <p>ACID Banking System (Transaction Audit System) A professional C# Windows Forms application that demonstrates the practical implementation of ACID Properties in a database environment using SQLite.</p>
+                <a href="https://github.com/Muhammadnoman385/ACID-Banking-System.." target="_blank" rel="noopener noreferrer" className="send-btn">View Code</a>
               </div>
               <div className="project-card">
                 <img src="photo.png" alt="Inventory System" />
